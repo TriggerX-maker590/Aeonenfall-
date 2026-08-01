@@ -23,8 +23,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Projekt auschecken
+      - name: Repository auschecken
         uses: actions/checkout@v4
+
+      - name: Projektteile zusammensetzen
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f aeonenfall_project.part00
+          test -f aeonenfall_project.part01
+          test -f aeonenfall_project.part02
+          test -f aeonenfall_project.part03
+          test -f aeonenfall_project.part04
+          cat aeonenfall_project.part* > aeonenfall_project.zip
+          rm -rf project
+          mkdir -p project
+          unzip -q aeonenfall_project.zip -d project
+          test -f project/project.godot
+          test -f project/scripts/game_state.gd
+          test -f project/scripts/music_manager.gd
+          test -f project/scripts/scene_transition.gd
 
       - name: Werkzeuge installieren
         run: sudo apt-get update && sudo apt-get install -y p7zip-full
@@ -39,10 +57,24 @@ jobs:
             "https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-${GODOT_STATUS}/Godot_v${GODOT_VERSION}-${GODOT_STATUS}_export_templates.tpz"
           unzip -q godot.zip
           chmod +x "${GODOT_BIN}"
+
           TEMPLATE_DIR="$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.${GODOT_STATUS}"
-          mkdir -p "$TEMPLATE_DIR"
-          7z e -y templates.tpz -o"$TEMPLATE_DIR" \
-            web_nothreads_release.zip web_nothreads_debug.zip version.txt
+          rm -rf template_unpack "$TEMPLATE_DIR"
+          mkdir -p template_unpack "$TEMPLATE_DIR"
+          7z x -y templates.tpz -otemplate_unpack >/dev/null
+
+          for FILE in web_nothreads_debug.zip web_nothreads_release.zip version.txt; do
+            SOURCE="$(find template_unpack -type f -name "$FILE" -print -quit)"
+            if [ -z "$SOURCE" ]; then
+              echo "Exportvorlage fehlt im Paket: $FILE"
+              find template_unpack -maxdepth 3 -type f | sort
+              exit 1
+            fi
+            cp "$SOURCE" "$TEMPLATE_DIR/$FILE"
+          done
+
+          test -s "$TEMPLATE_DIR/web_nothreads_debug.zip"
+          test -s "$TEMPLATE_DIR/web_nothreads_release.zip"
           "./${GODOT_BIN}" --version
           ls -lh "$TEMPLATE_DIR"
 
@@ -50,7 +82,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          "./${GODOT_BIN}" --headless --path . --import
+          "./${GODOT_BIN}" --headless --path project --import
 
       - name: Web-App exportieren
         shell: bash
@@ -58,8 +90,8 @@ jobs:
           set -euo pipefail
           rm -rf build/web
           mkdir -p build/web
-          "./${GODOT_BIN}" --headless --path . --export-release "Web iPhone" build/web/index.html
-          python3 web_support/patch_web_build.py build/web
+          "./${GODOT_BIN}" --headless --path project --export-release "Web iPhone" "$GITHUB_WORKSPACE/build/web/index.html"
+          python3 project/web_support/patch_web_build.py "$GITHUB_WORKSPACE/build/web"
           test -f build/web/index.html
           test -f build/web/index.wasm
           test -f build/web/index.pck
@@ -97,5 +129,3 @@ jobs:
       - name: Auf GitHub Pages veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v4
-
-
