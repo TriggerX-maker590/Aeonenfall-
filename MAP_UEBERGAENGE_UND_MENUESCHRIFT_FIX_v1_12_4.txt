@@ -1,0 +1,9 @@
+AEONENFALL v1.12.4 – Kartenübergänge und Menüschrift
+
+- Übergangspunkte der aktiven Questkarten enger an sichtbare Ausgänge gesetzt.
+- Rückkehr-Spawns liegen nicht mehr innerhalb der Wechselradien.
+- Norddorf-Ausgänge an Kartenränder und Wegschilder angeglichen.
+- Nordstollen Außen, Stolleneingang, Hauptstollen, Bosskammer und Tiefe Erzader angepasst.
+- Alte Lagerkammer bleibt unverändert und wird nicht als Grundlage weiterbearbeitet.
+- Globale mobile Menüschrift vergrößert.
+- Attribute, Attributwerte, Kampfwerte, Ressourcenwerte und Inventardetails vergrößert.

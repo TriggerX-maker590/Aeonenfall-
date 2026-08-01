@@ -1,0 +1,26 @@
+AEONENFALL v1.11.67 – LOGISCHE KAMPFHINTERGRÜNDE
+
+Integrierte Außenhintergründe:
+- Waldlichtung am Nordstollen
+- Bergbauposten vor dem Stollen
+
+Verwendung außen:
+- Graurücken-Wolf: Waldlichtung
+- Dornrücken-Eber: Waldlichtung oder Bergbauposten
+- Felsenkrähe: Bergbauposten
+
+Integrierte Minenhintergründe:
+- Holzgestützte Stollengalerie
+- Kristallstollen mit Schienen
+- Alte Lagerkammer
+- Offene Minenarena
+- Tiefe Kristallkammer
+- Laternenkammer
+
+Verwendung innen:
+- Stollenratte: bodennahe, trockene Stollen- und Lagerbereiche
+- Höhlenfledermaus: tiefe, dunklere Kristall- und Höhlenbereiche
+
+Die Figurenpositionen bleiben auf der großen freien Bodenfläche oberhalb der Kampf-UI.
+Wände, Holzstützen, Kisten, Schienen und Kristalle liegen außerhalb der Standflächen.
+Die Hintergrundbilder wurden als komprimierte WebP-Dateien eingebunden, um Godots Importzeit klein zu halten.

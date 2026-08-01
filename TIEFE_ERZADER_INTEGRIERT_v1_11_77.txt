@@ -1,0 +1,34 @@
+ÄONENFALL v1.11.77 – TIEFE ERZADER INTEGRIERT
+
+Ausgangsprojekt:
+- Aeonenfall_v1_11_76
+
+Neue Hauptszene:
+- res://nordstollen/maps/TiefeErzader.tscn
+
+Integration:
+- Übergang aus der Eingestürzten Kammer hinter dem Aderwächter
+- Zugang nur nach dem Welt-Flag nordstollen_tiefe_erzader_unlocked
+- Rückweg zur Eingestürzten Kammer
+- Ryu, Kamera, Touch-HUD und Nordstollen-Fußschritte aus dem bestehenden Projekt
+- bestätigte Wegmaske byte-identisch übernommen
+- keine Zufallsbegegnungen im Belohnungsraum
+- logisch platzierte Truhe, Materialkiste, Versteck, Vorräte und zwei Notizen
+- zwei optionale Materialadern
+- animierte Hauptader mit Idle, Treffern, Rissbildung, Zerfall und erschöpftem Zustand
+- Tiefenadererz wird genau einmal vergeben und dauerhaft gespeichert
+
+Borins Quest:
+- bisherige Drei-Erz-Anforderung ersetzt durch 1× Tiefenadererz
+- Questziel nach dem Abbau: Bringe das Tiefenadererz zu Borin.
+- Borins Dialog, Inventaranzeige und Speicherstand-Migration angepasst
+
+Prüfungen:
+- alle neuen res://-Ressourcenpfade vorhanden
+- Karte und Wegmaske: 1536 × 1152 Pixel
+- Spawn, Rückweg und Hauptader-Zugang liegen auf der begehbaren Maske
+- alle Interaktionen liegen innerhalb ihrer erreichbaren Interaktionsradien
+- Quest- und Dialog-JSON erfolgreich geparst
+
+Hinweis:
+In dieser Arbeitsumgebung war kein Godot-Editor bzw. Godot-CLI verfügbar. Die Integration wurde daher strukturell, anhand der vorhandenen Projektarchitektur und durch Ressourcen-/Maskenprüfungen validiert, aber nicht als laufender Godot-Build gestartet.

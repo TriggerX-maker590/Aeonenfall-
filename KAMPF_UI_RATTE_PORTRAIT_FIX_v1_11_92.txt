@@ -1,0 +1,3 @@
+Aeonenfall v1.11.92
+- Gegnerporträt in der Initiativeleiste vertikal an das Spielerporträt angeglichen.
+- Stollenratte im Kampf leicht vergrößert und neu ausgerichtet, damit sie präsenter wirkt.

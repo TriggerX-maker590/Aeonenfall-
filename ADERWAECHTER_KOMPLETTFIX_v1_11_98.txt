@@ -1,0 +1,12 @@
+Aeonenfall v1.11.98 – Aderwächter Komplettfix
+
+- Treffer- und Schadenseffekte werden dynamisch an Ryus tatsächlicher Position erzeugt.
+- Initiativeporträts von Ryu und Aderwächter besitzen dieselbe vertikale Ausrichtung.
+- Der Aderwächter nutzt seine vorhandenen Animationen attack1, attack2, attack3, skill, ultimate und defend.
+- Schlackeneruption, Resonanzschlag, Erzfaust, Herzkern-Entladung und Gesteinsmantel sind getrennte Bossaktionen.
+- Die nutzbare Schwäche ist Licht; Lichtschaden erhält 25 Prozent Bonus.
+- Rüstungsbrecher senkt die Bossverteidigung für die nächsten zwei Treffer und wird im Gegnerfenster angezeigt.
+- Der bisher unzugängliche Verteidigen-Befehl ersetzt im Bosskampf den nicht nutzbaren Fliehen-Befehl.
+- Verteidigen reduziert den nächsten Bossangriff deutlich und gewährt 5 TP.
+- Der beschädigte idle_4-Frame wird durch einen sauberen Ping-Pong-Idle-Loop ohne Stillstand ersetzt.
+- Bossgröße, Position, Blickrichtung, Zielring und bestehende blaue Kampf-UI aus v1.11.97 bleiben erhalten.

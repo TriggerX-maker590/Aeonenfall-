@@ -1,0 +1,43 @@
+{
+  "project": "Aeonenfall_Rundenkampf_Rekonstruktion_Godot47",
+  "main_scene": "res://main.tscn",
+  "battle_script": "res://scripts/battle.gd",
+  "ryu_attacks": {
+    "Angriff": {
+      "integrated": true,
+      "damage_timing": "frame 4"
+    },
+    "Lichtschnitt": {
+      "integrated": true,
+      "damage_timing": "light-impact frame"
+    },
+    "Klingenwirbel": {
+      "integrated": true,
+      "damage_timing": "three split impact frames",
+      "target": "all enemies"
+    },
+    "Rüstungsbrecher": {
+      "integrated": true,
+      "damage_timing": "ground-impact frame",
+      "status": "armor_break"
+    },
+    "Fokusstoß": {
+      "integrated": true,
+      "damage_timing": "separate target impact FX",
+      "cost": "TP"
+    }
+  },
+  "preserved_systems": [
+    "turn initiative",
+    "command menu",
+    "skill menu",
+    "target selection",
+    "MP/TP costs",
+    "damage formula",
+    "critical/weakness/resistance",
+    "status effects",
+    "enemy AI",
+    "victory/defeat flow"
+  ],
+  "runtime_validation": "Godot executable not available in this environment; static resource and archive validation completed."
+}

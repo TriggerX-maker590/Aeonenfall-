@@ -1,0 +1,9 @@
+Aeonenfall v1.11.86 – Globaler Blau-UI-Fix
+
+Umgesetzt:
+- Sämtliche Panels, Rahmen, Reiter und Menüschaltflächen des UI-Hubs auf den blauen Aeonenfall-Interaktionsstil vereinheitlicht.
+- Inventar-, Ausrüstungs-, Schnellzugriffs- und Händlerslots verwenden jetzt blaue Rahmen und blaue Auswahlzustände.
+- Überschriften, Separatoren, Fokus-, Hover- und Aktiv-Zustände im Menü auf den blauen Akzent umgestellt.
+- Kartenreiter zeigt nun abhängig vom aktuellen Gebiet die passende Kartenbezeichnung.
+- Erkundungs-HUD, Notizfenster, Dialogfenster und Shop-Modale visuell an denselben blauen Akzent angepasst.
+- Spiellogik, Inventardaten, Questlogik und Karteninhalte wurden nicht verändert.

@@ -1,0 +1,1 @@
+Alte Lagerkammer erweitert: sichtbarer Brief-Sprite, integrierte Erzader-Szene aus Projekt-Assets, vorhandene Truhe beibehalten. Karte basiert auf v1.11.75.

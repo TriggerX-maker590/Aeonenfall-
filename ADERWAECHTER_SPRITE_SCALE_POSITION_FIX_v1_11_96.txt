@@ -1,0 +1,10 @@
+Aeonenfall v1.11.96 – Aderwächter Sprite-, Größen- und Positionsfix
+
+- Verwendet ausschließlich den vorhandenen originalen Aderwächter-Sprite aus dem Projekt.
+- Keine Ersatzgrafik und kein neu erzeugter Boss.
+- Boss auf 62 % skaliert.
+- Sichtbarer Körper vollständig innerhalb des markierten Kampffeldes verankert.
+- Fußpunkt und Zielring gemeinsam auf (990, 398) ausgerichtet.
+- Negative Control-Skalierung entfernt; horizontale Ausrichtung erfolgt stabil über TextureRect.flip_h.
+- Trefferzentrum an die neue sichtbare Körperposition angepasst.
+- Niederlagenframes bleiben am gleichen Fußpunkt verankert.

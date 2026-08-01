@@ -1,0 +1,33 @@
+Aeonenfall v1.11.88 – Finale blaue Kampf-UI
+
+Grundlage:
+- Projektstand v1.11.86 GlobalBlueUIFix
+- Die verworfene Testversion v1.11.87 wurde nicht als Grundlage verwendet.
+
+Umgesetzt:
+- Das bestätigte ursprüngliche Kampflayout bleibt unverändert.
+- Sämtliche goldenen Rahmen- und Ornamenttexturen der Kampfoberfläche wurden in den verbindlichen blauen Aeonenfall-Stil überführt.
+- Charakterpanel, Befehlsmenü, Fähigkeitenliste, Beschreibungsfeld, Gegnerinformation und Fußleiste behalten ihre Form und Platzierung.
+- Die Initiativeleiste wurde als echte modulare UI neu aufgebaut: eigener Panel-Knoten, separate Linie, Kristallakzente und getrennte Portrait-Knoten.
+- Ryu besitzt ein passendes Kampfportrait; jeder integrierte Gegner besitzt ein eigenes Portrait in der Initiativeleiste.
+- Der aktuell handelnde Teilnehmer wird größer und an erster Position dargestellt.
+- Ein zentraler blauer Kristallakzent wurde oberhalb der unteren Meldungsleiste ergänzt.
+- Der Geschwindigkeitsbutton startet bei 1× und wechselt auf 2×; ein weiterer Druck stellt 1× wieder her.
+- Pause bleibt separat und funktionsfähig.
+- Zielringe im Kampffeld wurden ebenfalls blau angepasst.
+
+Betroffene Kämpfe:
+- Stollenratte
+- Graurücken-Wolf
+- Felsenkrähe
+- Höhlenfledermaus
+- Dornrücken-Eber
+- Aderwächter
+
+Nicht verändert:
+- Schadensberechnung
+- Gegnerwerte und Bossbalance
+- Zuglogik
+- Fähigkeiten und Gegenstände
+- Kampfanimationen
+- Belohnungen und Rückkehrszenen

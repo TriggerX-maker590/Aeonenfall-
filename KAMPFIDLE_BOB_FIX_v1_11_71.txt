@@ -1,0 +1,12 @@
+Aeonenfall – Kampf Idle/Bob Fix v1.11.71
+
+Änderungen:
+- Sanfte Bob-Idle-Animation für Ryu in allen Exact-Battle-Szenen.
+- Sanfte Bob-Idle-Animation für Bodengegner (Wolf, Eber, Ratte).
+- Deutlichere schwebende Bob-Idle-Animation für fliegende Gegner (Felsenkrähe, Höhlenfledermaus).
+- Angriffsbewegungen bleiben exklusiv für echte Angriffe erhalten.
+- Felsenkrähe im Kampf besser sichtbar gemacht (größer und höher positioniert).
+- Rückkehr nach Angriffen auf stabile Grundpositionen angepasst.
+
+Hinweis:
+- Basis ist die funktionierende Version v1.11.70.

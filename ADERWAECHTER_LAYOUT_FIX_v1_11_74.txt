@@ -1,0 +1,4 @@
+v1.11.74
+- Aderwächter im Bosskampf höher platziert, damit die untere Kampf-UI ihn nicht mehr verdeckt.
+- Bossgröße neu austariert: sichtbar größer als Ryu, aber stimmig zur Kampfbühne.
+- Pivot/Skalierung angepasst, damit Proportionen, Ring-Stand und Effektpositionen besser passen.

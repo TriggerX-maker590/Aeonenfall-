@@ -1,0 +1,8 @@
+ÄONENFALL v1.12.6 – IPHONE-WEB-APP
+
+1. ZIP entpacken.
+2. Inhalt in ein neues GitHub-Repository hochladen.
+3. GitHub: Settings > Pages > Source = GitHub Actions.
+4. Actions > Äonenfall iPhone Web-App > Run workflow.
+5. Den erzeugten Pages-Link an das iPhone senden.
+6. Safari > Teilen > Zum Home-Bildschirm.

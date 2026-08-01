@@ -1,0 +1,7 @@
+Aeonenfall v1.11.79 – Tiefe Erzader Render-/State-Fix
+
+- tiefe_erzader_base.png war intern eine JPEG-Datei mit falscher .png-Endung; jetzt echte PNG.
+- Rechteckige Hintergrundfragmente der extrahierten Props entfernt.
+- Projekt-native animierte Truhen und saubere Notiz-Sprites eingesetzt.
+- Bestehende aktive Borin-Testspielstände werden einmalig auf „Tiefenadererz abbauen“ zurückgesetzt.
+- Boss-Balancefix aus v1.11.78 bleibt erhalten.

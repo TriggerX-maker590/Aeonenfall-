@@ -1,0 +1,8 @@
+Aeonenfall v1.12.2 – Borin-Questbelohnung und Siegesfenster-Fix
+
+- Borins Erzquest endet nicht mehr bei der Erzabgabe.
+- Nach einem erneuten Schmiedebesuch kann Ryu die Aderklinge abholen.
+- Belohnung: Aderklinge, 350 Erfahrung und 240 Silber.
+- Alte abgeschlossene Spielstände werden direkt auf die Abholstufe migriert.
+- Aderklinge: +26 Angriff, +5 Fokus, +10 % Lichtschaden.
+- Siegesfenster aller integrierten Kämpfe vergrößert; Level- und Beutetexte sind vollständig lesbar.

@@ -1,0 +1,11 @@
+Aeonenfall v1.12.1 – Level- und AusrüstungssystemFix
+
+- Zentrales Erfahrungssystem mit echten Stufenaufstiegen bis Stufe 99.
+- Mehrere Stufenaufstiege durch eine große Belohnung werden in einem Durchlauf verarbeitet.
+- Bereits angesammelte Erfahrung alter Spielstände wird beim Laden automatisch umgerechnet.
+- Stufen erhöhen LP, Fokus, Ausdauer, Attribute und Kampfwerte; ein Stufenaufstieg füllt Ressourcen auf.
+- Kampfergebnis zeigt Stufenanstieg und zentrale Wertzuwächse an.
+- Zentrale Ausrüstungsdefinitionen für Menü, normale Kämpfe und Aderwächter.
+- Ausgerüstete Waffen, Rüstungen, Schmuck und Schmiedeverbesserungen verändern die echten Kampfwerte.
+- Schmiedeverbesserungen geben je Stufe +15 % auf die Gegenstandswerte, maximal +5.
+- Boss-Erfahrung wird nur bei der ersten echten Weltbesiegung vergeben.

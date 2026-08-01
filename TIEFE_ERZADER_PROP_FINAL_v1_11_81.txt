@@ -1,0 +1,16 @@
+Aeonenfall v1.11.81 – Tiefe Erzader Prop-Finalisierung
+
+Basis: v1.11.79 Render/State Fix.
+
+Geändert:
+- Bestätigte Prop-Platzierung in TiefeErzader.tscn übernommen.
+- Haupttruhe oben links auf gut lesbare, aber nicht übergroße Größe gebracht.
+- Materialkiste und versteckter Vorrat vergrößert.
+- Schwebende Papier-Icons entfernt.
+- Letzter Schichtbericht als kleiner Minen-Arbeitstisch mit Lampe und Papier umgesetzt.
+- Tagebuch des Vorarbeiters als Lesepult mit offenem Buch und Lampe umgesetzt.
+- Interaktionspositionen und -radien an die neuen Objekte angepasst.
+- Karte, Wegmaske, Hauptader, Questzustände und Kollisionen unverändert gelassen.
+
+Hauptszene:
+res://nordstollen/maps/TiefeErzader.tscn

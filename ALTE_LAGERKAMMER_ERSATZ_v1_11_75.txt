@@ -1,0 +1,1 @@
+Alte Lagerkammer vollständig ersetzt: neue 1448x1086-Karte, neue Wegmaske, neue Debugmaske, angepasste Spawn-/Interaktionspositionen. Basis: v1.11.74.

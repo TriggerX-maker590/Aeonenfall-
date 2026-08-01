@@ -1,0 +1,16 @@
+Aeonenfall v1.11.66 – Kampfanimationen und Gegnermaßstab
+
+Behoben:
+- Ryus Fähigkeiten verwenden im exakten Kampf-UI wieder eigene sichtbare Animationen.
+- Lichtschnitt: Schwertsequenz mit blauem Lichtbogen.
+- Klingenwirbel: vollständige 12-Frame-Spezialanimation mit mehreren Treffereffekten.
+- Rüstungsbrecher: vollständige 10-Frame-Spezialanimation mit orangefarbenem Brechereffekt.
+- Fokusstoß: vollständige 10-Frame-Spezialanimation plus animierte Fokusstoß-Effektfolge.
+- Treffertexte und Effekte werden relativ zur tatsächlichen Gegnerposition erzeugt.
+- Ryus Angriffsposition wird pro Gegnertyp passend berechnet.
+- Graurücken-Wolf, Dornrücken-Eber, Felsenkrähe, Höhlenfledermaus und Stollenratte wurden relativ zu Ryus sichtbarer Körpergröße neu skaliert.
+- Bodenringe wurden an die neue Gegnergröße und Position angepasst.
+
+Unverändert:
+- Kampflogik, Werte, Kosten, Belohnungen, Zufallsbegegnungen und Rückkehrlogik.
+- Verbindliches Kampf-UI-Layout.

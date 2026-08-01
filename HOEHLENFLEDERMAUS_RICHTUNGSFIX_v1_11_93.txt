@@ -1,0 +1,5 @@
+Aeonenfall v1.11.93 – Höhlenfledermaus RichtungsFix
+
+- Höhlenfledermaus im Kampf horizontal zu Ryu ausgerichtet.
+- Die Korrektur gilt einheitlich für Idle-, Angriffs-, Treffer- und Todesframes.
+- Initiativeporträt, Kampf-UI, Werte und Kampflogik bleiben unverändert.

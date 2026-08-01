@@ -1,0 +1,8 @@
+Aeonenfall v1.11.95 – Aderwächter Sichtbarkeits-/Positionsfix
+
+- Bossframe wird in nativer Größe 700x700 dargestellt.
+- Sichtbarer Fußpunkt des Aderwächters liegt bei (1060, 398) direkt auf dem Zielring.
+- Der vollständige Bosskörper bleibt oberhalb der unteren Kampf-UI sichtbar.
+- Trefferzentrum wurde an die sichtbare Körpermitte angepasst.
+- Angriffsvorstoß bleibt auf gleicher Bodenhöhe und läuft nach links auf Ryu zu.
+- Kampf-UI, Werte und übrige Gegnerkämpfe bleiben unverändert.

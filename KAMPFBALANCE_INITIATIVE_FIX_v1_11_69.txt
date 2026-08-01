@@ -1,0 +1,5 @@
+v1.11.69
+- Zufallskaempfe im Nordstollen deutlich seltener gesetzt
+- Gegner fuer Solo-Ryu abgeschwaecht und skalieren fairer
+- Nach Kaempfen deutlich laengerer Schutz vor dem naechsten Zufallskampf
+- Initiativeleiste nutzt jetzt vergroesserte Gegner-Portraits statt winziger Sprites

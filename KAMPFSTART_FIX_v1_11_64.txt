@@ -1,0 +1,9 @@
+Aeonenfall v1.11.64 – Kampfstart-Fix
+
+Behoben:
+- GDScript-Typfehler in outdoor_encounter_selector.gd
+- derselbe Typfehler in mine_encounter_selector.gd
+- explizite String-/Float-Typen für Begegnungspools
+- Fehlerprüfung beim Szenenwechsel mit Rückkehr-Fallback
+
+Die Kampf-Szenen und Gegnerressourcen wurden nicht entfernt oder ersetzt.

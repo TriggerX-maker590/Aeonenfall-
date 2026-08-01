@@ -1,0 +1,4 @@
+Static web preparation: OK
+Literal non-dynamic resource references: 525
+Missing literal resource references: 0
+

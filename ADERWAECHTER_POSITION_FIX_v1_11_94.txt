@@ -1,0 +1,7 @@
+Aeonenfall v1.11.94 – Aderwächter PositionsFix
+
+- Aderwächter nach oben in den freien, markierten Kampfraum versetzt.
+- Bossdarstellung an den bestehenden Zielring/Fußpunkt angepasst.
+- Skalierung korrigiert, damit der vollständige Körper oberhalb der Kampf-UI sichtbar bleibt.
+- Angriffsbewegung relativ zur neuen Grundposition berechnet und auf Ryu ausgerichtet.
+- Kampf-UI, Werte, Initiative und übrige Gegnerkämpfe unverändert.

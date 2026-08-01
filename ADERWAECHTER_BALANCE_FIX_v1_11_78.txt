@@ -1,0 +1,17 @@
+Aeonenfall v1.11.78 – Aderwächter Balance-Fix
+
+Korrigiert:
+- Boss-LP von 1.200 auf 380 Grund-LP reduziert.
+- Moderate Skalierung: +15 LP pro zusätzlichem Ryu-Level.
+- Boss-Angriff von 34 auf 26 Grundwert reduziert.
+- Boss-Verteidigung von 18 auf 14 Grundwert reduziert.
+- Ryus ausgerüstete Gegenstände werden im Bosskampf nun korrekt auf Angriff und Verteidigung angerechnet.
+  Startausrüstung: Eisenschwert +18 Angriff, Lederhelm +7 Verteidigung, Reisestiefel +5 Verteidigung.
+- Verbesserungsstufen aus equipment_upgrades werden berücksichtigt.
+- Boss-Levelanzeige skaliert nun passend zu Ryu statt starr auf Stufe 27 zu stehen.
+
+Erwarteter Startzustand mit Standardausrüstung:
+- Ryu: 30 Angriff, 20 Verteidigung
+- Aderwächter: 380 LP, 26 Angriff, 14 Verteidigung
+
+Die Tiefe-Erzader-Integration aus v1.11.77 bleibt unverändert enthalten.

@@ -1,0 +1,17 @@
+Aeonenfall v1.11.82 – Tiefe Erzader UI- & Hauptader-Fix
+
+Änderungen:
+- Erkundungs-Nachrichtenfenster in Nordstollen und Norddorf vergrößert und optisch an die Haupt-UI angepasst.
+- Notizen in der Tiefen Erzader werden nun mit größerer, besser lesbarer Darstellung samt Titel gezeigt.
+- Nachrichtentexte im Erkundungsmodus unterstützen jetzt eine harmonischere Zweizeilen-/Dreizielen-Darstellung.
+- Tiefen-Erzader-Hauptader in der Szene etwas nach unten versetzt, damit die Abbauanimation visueller sauber sitzt.
+- Innere Sprite-/Licht-/Pickup-Offsets der Hauptader leicht nach unten korrigiert.
+- Depleted-Zustand der Hauptader zeigt nun kein dauerhaft loopendes Staub-Flackern mehr, sondern bleibt statisch.
+
+Nachtrag v1.11.83:
+- Notizfenster höher positioniert, damit die untere Interaktionsleiste nicht überdeckt wird.
+- Notizfenster visuell stärker an die Spiel-UI angepasst (gleiche Grundfarben / Rahmenstil).
+- Interaktionsleiste blendet sich während eingeblendeter Notizmeldungen aus und erscheint danach wieder.
+
+Nachtrag v1.11.84:
+- Notiz-/Dialogfenster nutzt jetzt denselben blauen UI-Stil und Rahmen wie die Interaktionsleiste.

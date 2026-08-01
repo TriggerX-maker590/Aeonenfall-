@@ -1,0 +1,11 @@
+Aeonenfall v1.11.72 – Kamera- und UI-Konsistenz
+
+Umgesetzt:
+- Stolleneingang Innen und Alte Lagerkammer jetzt mit denselben Werten wie Norddorf/Nordstollen Außen:
+  - Ryu-Skalierung: 0.45
+  - Kamera-Zoom: 1.82
+- Aderwächter-Kampf auf das gleiche exakte Kampf-UI-Layout wie die übrigen Einzelkämpfe umgestellt.
+- Aderwächter nutzt jetzt eine konsistente Bosskampf-Oberfläche mit identischer Grundstruktur
+  zu Wolf/Eber/Krähe/Fledermaus, aber mit eigenen Bossdaten, Bossgrafiken und Bossarena.
+- Flucht im Aderwächter-Kampf deaktiviert.
+- Bosssieg aktualisiert weiterhin Weltstatus und Belohnung.

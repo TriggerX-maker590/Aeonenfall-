@@ -1,0 +1,13 @@
+Aeonenfall v1.12.0 – Verbrauchsgegenstände-Systemfix
+
+- Kampfmenüs lesen reale Verbrauchsgegenstände direkt aus GameState.inventory.
+- Zentrale Definition für Name, Beschreibung, Wirkung und Stärke.
+- Heilkraut: 60 LP.
+- Asterkraut-Sud: 180 LP.
+- Sternentau: 80 Fokus.
+- Asterfunke/Asterträne als Wiederbelebungsgegenstände vorbereitet.
+- Gegenstände erscheinen nur bei tatsächlichem Inventarbestand.
+- Verbrauch reduziert exakt denselben Inventareintrag.
+- Altbestände werden migriert: Heiltrank -> Asterkraut-Sud, Manatrank -> Sternentau, Wiederbelebungsstein -> Asterfunke.
+- Neue Spielstände starten direkt mit Asterkraut-Sud und Sternentau statt Platzhaltern.
+- Inventar-UI und Kampf nutzen dieselben Verbrauchsdaten.

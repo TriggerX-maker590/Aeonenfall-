@@ -1,0 +1,7 @@
+Aeonenfall v1.12.6 – Menü-Zahlen-SichtbarkeitsFix
+
+- Die fehlerhafte separate Mindestgrößenberechnung für Zahlen wurde entfernt.
+- Zahlen verwenden wieder die bewährte automatische Textanpassung des Menüs.
+- Die in v1.12.5 vergrößerten Anzeigeflächen bleiben erhalten.
+- Eine dünne dunkle Kontur verbessert den Kontrast, ohne Zeichen abzuschneiden.
+- Zahlen werden mit höherem Z-Index sicher über Balken und Panelgrafiken dargestellt.

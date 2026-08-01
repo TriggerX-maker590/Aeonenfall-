@@ -1,0 +1,8 @@
+Aeonenfall v1.11.85 – Tiefe Erzader UI-, Button- und Karten-Fix
+
+Umgesetzt:
+- Questtruhe in der Tiefe Erzader etwas nach vorne/unten versetzt.
+- HUD-Schaltflächen in Nordstollen und Norddorf auf den blauen UI-Stil umgestellt.
+- Hauptmenü-/UI-Hub-Schaltflächen auf den blauen Stil der Interaktionsleiste vereinheitlicht.
+- Kartenmenü zeigt jetzt in der Tiefe Erzader die passende Gebiets-Karte statt Norddorf.
+- Kartenreiter-Beschriftung und Karteninfos passen sich an das aktuelle Gebiet an.

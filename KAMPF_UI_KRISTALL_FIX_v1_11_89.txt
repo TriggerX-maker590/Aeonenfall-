@@ -1,0 +1,14 @@
+Aeonenfall v1.11.89 – Kristall-Fix der finalen Kampf-UI
+
+Basis: v1.11.88
+
+Geändert wurden ausschließlich die Kristallgrafiken der bestätigten Kampf-UI:
+- großer, dunkelblauer Kristallfächer mittig über der unteren Meldungsleiste
+- schlanke Kristallornamente an den Enden der Initiativeleiste
+- passender zentraler Kristallmarker in der Initiativeleiste
+- kleine, passende Kristallmarker entlang der Initiative-Linie
+
+Nicht verändert:
+- Layout, Rahmen, Porträts und Positionen der Kampf-UI
+- Gegnerdarstellung und Kampfanimationen
+- Kampfwerte, Fähigkeiten, Geschwindigkeitsschaltung und Questlogik

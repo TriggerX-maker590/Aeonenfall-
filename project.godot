@@ -1,0 +1,71 @@
+; Aeonenfall combined Norddorf UI, playable exploration and preserved battle UI
+config_version=5
+
+[application]
+config/name="Äonenfall v1.12.6 – iPhone Web-App"
+run/main_scene="res://ui/ui_hub.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/quit_on_go_back=false
+
+[autoload]
+GameState="*res://scripts/game_state.gd"
+MusicManager="*res://scripts/music_manager.gd"
+SceneTransition="*res://scripts/scene_transition.gd"
+
+[display]
+window/size/viewport_width=1536
+window/size/viewport_height=864
+window/size/window_width_override=1536
+window/size/window_height_override=864
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+window/stretch/scale_mode="fractional"
+window/handheld/orientation=4
+
+[rendering]
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=false
+2d/snap/snap_2d_vertices_to_pixel=false
+
+[input_devices]
+pointing/emulate_touch_from_mouse=true
+pointing/emulate_mouse_from_touch=true
+
+[input]
+move_left={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":65), Object(InputEventKey,"physical_keycode":4194311)]
+}
+move_right={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":68), Object(InputEventKey,"physical_keycode":4194313)]
+}
+move_up={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":87), Object(InputEventKey,"physical_keycode":4194320)]
+}
+move_down={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":83), Object(InputEventKey,"physical_keycode":4194322)]
+}
+run={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":4194325), Object(InputEventKey,"physical_keycode":16777237)]
+}
+interact={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":69), Object(InputEventKey,"physical_keycode":32)]
+}
+map_toggle={
+"deadzone": 0.25,
+"events": [Object(InputEventKey,"physical_keycode":77)]
+}
+
+[audio]
+
+driver/enable_input=false

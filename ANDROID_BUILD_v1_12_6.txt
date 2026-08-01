@@ -1,0 +1,7 @@
+Äonenfall Android v1.12.6
+- Basis: bestätigte v1.11.48 ControlFix APK
+- Sensor-Querformat und ARM64 bleiben erhalten
+- v1.12.6 Menü-Zahlen-SichtbarkeitsFix übernommen
+- MusicManager/SceneTransition über GameState-Laufzeitbrücke
+- WAV/OGG-Dateien Android-kompatibel zur Laufzeit geladen
+- globale GDScript-Klassenliste vollständig erzeugt

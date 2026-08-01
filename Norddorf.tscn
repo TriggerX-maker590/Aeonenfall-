@@ -1,0 +1,456 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/norddorf_main.gd" id="1_main"]
+[ext_resource type="Texture2D" path="res://assets/maps/norddorf_hd_concept.png" id="2_map"]
+[ext_resource type="Texture2D" path="res://assets/maps/walkable_mask.png" id="3_mask"]
+[ext_resource type="Texture2D" path="res://assets/maps/walkable_debug.png" id="4_debug"]
+[ext_resource type="PackedScene" path="res://Ryu.tscn" id="5_ryu"]
+
+[sub_resource type="CircleShape2D" id="InteractionRadius68"]
+radius = 68.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius70"]
+radius = 70.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius72"]
+radius = 72.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius76"]
+radius = 76.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius78"]
+radius = 78.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius80"]
+radius = 80.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius82"]
+radius = 82.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius84"]
+radius = 84.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius86"]
+radius = 86.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius95"]
+radius = 95.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius105"]
+radius = 105.0
+
+[sub_resource type="CircleShape2D" id="InteractionRadius118"]
+radius = 118.0
+
+[node name="Norddorf" type="Node2D"]
+script = ExtResource("1_main")
+editor_description = "Eigenständige, im Godot-Editor bearbeitbare Norddorf-Szene. Die HD-Karte ist derzeit ein zusammenhängendes Bild; Struktur, Markierungen, Interaktionszonen, Ausgänge, Spieler und Debugmaske sind echte Nodes."
+
+[node name="Map" type="Node2D" parent="."]
+editor_description = "Visuelle Kartenebenen. Das aktuelle HD-Konzept liegt unter Ground/NorddorfHDMap."
+
+[node name="Ground" type="Node2D" parent="Map"]
+
+[node name="NorddorfHDMap" type="Sprite2D" parent="Map/Ground"]
+z_index = -10
+position = Vector2(0, 0)
+centered = false
+texture = ExtResource("2_map")
+
+[node name="Water" type="Node2D" parent="Map"]
+editor_description = "Reservierte Ebene für spätere getrennte Wasseranimationen und Uferobjekte."
+
+[node name="Buildings" type="Node2D" parent="Map"]
+editor_description = "Gebäudemarker der flachen HD-Karte. Sie können später durch einzelne Szenen ersetzt werden."
+
+[node name="Schankhaus" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(752, 210)
+
+[node name="Gemischtwarenladen" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(452, 430)
+
+[node name="Schmiede" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(1130, 225)
+
+[node name="WohnhausNordwest" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(155, 225)
+
+[node name="WohnhausSuedwest" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(575, 760)
+
+[node name="WohnhausSuedmitte" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(792, 790)
+
+[node name="WohnhausOst" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(1215, 675)
+
+[node name="WohnhausSuedost" type="Marker2D" parent="Map/Buildings"]
+position = Vector2(1225, 965)
+
+[node name="Objects" type="Node2D" parent="Map"]
+editor_description = "Markierungen für Brunnen, Marktstände, Hafen und sonstige Objekte."
+
+[node name="Dorfbrunnen" type="Marker2D" parent="Map/Objects"]
+position = Vector2(785, 433)
+
+[node name="MarktstandNord" type="Marker2D" parent="Map/Objects"]
+position = Vector2(1014, 454)
+
+[node name="MarktstandSued" type="Marker2D" parent="Map/Objects"]
+position = Vector2(870, 575)
+
+[node name="Hafen" type="Marker2D" parent="Map/Objects"]
+position = Vector2(205, 760)
+
+[node name="Nature" type="Node2D" parent="Map"]
+editor_description = "Reservierte Ebene für später separat platzierte Vegetation, Felsen, Zäune und Dekoration."
+
+[node name="Collision" type="Node2D" parent="."]
+editor_description = "Die Bewegung liest WalkableMaskReference als Bildmaske. F3 schaltet WalkableDebug ein und aus."
+
+[node name="WalkableMaskReference" type="Sprite2D" parent="Collision"]
+visible = false
+centered = false
+texture = ExtResource("3_mask")
+
+[node name="WalkableDebug" type="Sprite2D" parent="Collision"]
+visible = false
+z_index = 1000
+centered = false
+texture = ExtResource("4_debug")
+
+[node name="Entrances" type="Node2D" parent="."]
+editor_description = "Gebäudeeingänge als direkt verschiebbare Marker."
+
+[node name="Schankhaus" type="Marker2D" parent="Entrances"]
+position = Vector2(752, 270)
+
+[node name="Gemischtwarenladen" type="Marker2D" parent="Entrances"]
+position = Vector2(452, 485)
+
+[node name="Schmiede" type="Marker2D" parent="Entrances"]
+position = Vector2(1130, 285)
+
+[node name="WohnhausNordwest" type="Marker2D" parent="Entrances"]
+position = Vector2(155, 285)
+
+[node name="WohnhausSuedwest" type="Marker2D" parent="Entrances"]
+position = Vector2(575, 810)
+
+[node name="WohnhausSuedmitte" type="Marker2D" parent="Entrances"]
+position = Vector2(792, 842)
+
+[node name="WohnhausOst" type="Marker2D" parent="Entrances"]
+position = Vector2(1215, 730)
+
+[node name="WohnhausSuedost" type="Marker2D" parent="Entrances"]
+position = Vector2(1225, 1025)
+
+[node name="NPCs" type="Node2D" parent="."]
+editor_description = "NPC-Interaktionspunkte. Die Figuren sind in der aktuellen Konzeptgrafik noch eingebacken; die Area2D-Nodes sind bereits echte Szenenelemente."
+
+[node name="InteractionZones" type="Node2D" parent="."]
+editor_description = "Alle Gebäude-, Punkt- und Angelinteraktionen. Position, Radius und Metadaten können im Inspector geändert werden."
+
+[node name="Exits" type="Node2D" parent="."]
+editor_description = "Gebietsübergänge Nordpfad, Ostweg und Südweg."
+
+[node name="Schankhaus" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(752, 270)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "schankhaus"
+metadata/type = "building"
+metadata/display_name = "Schankhaus betreten"
+metadata/description = "Lindas Schankhaus ist Norddorfs Treffpunkt für Gerüchte, Reisende und den Beginn neuer Aufträge."
+metadata/radius = 82.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/Schankhaus"]
+shape = SubResource("InteractionRadius82")
+disabled = true
+
+[node name="Linda" type="Area2D" parent="NPCs" groups=["interactable"]]
+position = Vector2(846, 340)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "linda"
+metadata/type = "npc"
+metadata/display_name = "Mit Linda sprechen"
+metadata/description = "Linda kennt die Bewohner Norddorfs und hört im Schankhaus vieles, das andere übersehen."
+metadata/radius = 72.0
+
+[node name="Radius" type="CollisionShape2D" parent="NPCs/Linda"]
+shape = SubResource("InteractionRadius72")
+disabled = true
+
+[node name="Gemischtwarenladen" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(452, 485)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "gemischtwarenladen"
+metadata/type = "shop"
+metadata/display_name = "Miras Gemischtwarenladen betreten"
+metadata/description = "Kaufen, verkaufen und Ausrüstung prüfen."
+metadata/radius = 84.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/Gemischtwarenladen"]
+shape = SubResource("InteractionRadius84")
+disabled = true
+
+[node name="Mira" type="Area2D" parent="NPCs" groups=["interactable"]]
+position = Vector2(496, 548)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "mira"
+metadata/type = "npc"
+metadata/display_name = "Mit Mira sprechen"
+metadata/description = "Mira versorgt Norddorf mit Waren aus der Küstenregion."
+metadata/radius = 68.0
+
+[node name="Radius" type="CollisionShape2D" parent="NPCs/Mira"]
+shape = SubResource("InteractionRadius68")
+disabled = true
+
+[node name="Schmiede" type="Area2D" parent="InteractionZones"]
+position = Vector2(1130, 285)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "schmiede"
+metadata/type = "scenery"
+metadata/display_name = "Borins offene Schmiede"
+metadata/description = "Borin arbeitet unter freiem Himmel an Esse und Amboss. Sprich direkt mit ihm."
+metadata/radius = 84.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/Schmiede"]
+shape = SubResource("InteractionRadius84")
+disabled = true
+
+[node name="Borin" type="Area2D" parent="NPCs" groups=["interactable"]]
+position = Vector2(1120, 372)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "borin"
+metadata/type = "npc"
+metadata/display_name = "Mit Borin sprechen"
+metadata/description = "Borin ist Norddorfs Schmied und ein wichtiger Ansprechpartner für Ryus Ausrüstung."
+metadata/radius = 70.0
+
+[node name="Radius" type="CollisionShape2D" parent="NPCs/Borin"]
+shape = SubResource("InteractionRadius70")
+disabled = true
+
+[node name="WohnhausNordwest" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(155, 285)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "wohnhaus_nordwest"
+metadata/type = "building"
+metadata/display_name = "Wohnhaus betreten"
+metadata/description = "Ein bewohntes Haus am nördlichen Gartenweg."
+metadata/radius = 78.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/WohnhausNordwest"]
+shape = SubResource("InteractionRadius78")
+disabled = true
+
+[node name="WohnhausSuedwest" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(575, 810)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "wohnhaus_suedwest"
+metadata/type = "building"
+metadata/display_name = "Wohnhaus betreten"
+metadata/description = "Ein kleines Haus nahe dem Hafenweg."
+metadata/radius = 78.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/WohnhausSuedwest"]
+shape = SubResource("InteractionRadius78")
+disabled = true
+
+[node name="WohnhausSuedmitte" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(792, 842)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "wohnhaus_suedmitte"
+metadata/type = "building"
+metadata/display_name = "Wohnhaus betreten"
+metadata/description = "Ein Familienhaus am südlichen Dorfweg."
+metadata/radius = 80.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/WohnhausSuedmitte"]
+shape = SubResource("InteractionRadius80")
+disabled = true
+
+[node name="WohnhausOst" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(1215, 730)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "wohnhaus_ost"
+metadata/type = "building"
+metadata/display_name = "Wohnhaus betreten"
+metadata/description = "Ein Wohnhaus am Ostweg mit Blick auf den Dorfplatz."
+metadata/radius = 82.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/WohnhausOst"]
+shape = SubResource("InteractionRadius82")
+disabled = true
+
+[node name="WohnhausSuedost" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(1225, 1025)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "wohnhaus_suedost"
+metadata/type = "building"
+metadata/display_name = "Wohnhaus betreten"
+metadata/description = "Das südöstliche Wohnhaus liegt nahe dem Ausgang aus Norddorf."
+metadata/radius = 82.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/WohnhausSuedost"]
+shape = SubResource("InteractionRadius82")
+disabled = true
+
+[node name="Dorfbrunnen" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(785, 433)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "brunnen"
+metadata/type = "point"
+metadata/display_name = "Dorfbrunnen untersuchen"
+metadata/description = "Der Brunnen bildet den Mittelpunkt Norddorfs und dient den Bewohnern als natürlicher Treffpunkt."
+metadata/radius = 118.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/Dorfbrunnen"]
+shape = SubResource("InteractionRadius118")
+disabled = true
+
+[node name="Hafenmann" type="Area2D" parent="NPCs" groups=["interactable"]]
+position = Vector2(230, 885)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "hafenmann"
+metadata/type = "npc"
+metadata/display_name = "Mit dem Hafenmann sprechen"
+metadata/description = "Der Hafenmann kennt die Gezeiten, Schiffe und sicheren Routen entlang der Küste."
+metadata/radius = 76.0
+
+[node name="Radius" type="CollisionShape2D" parent="NPCs/Hafenmann"]
+shape = SubResource("InteractionRadius76")
+disabled = true
+
+[node name="Angelplatz" type="Area2D" parent="InteractionZones" groups=["interactable"]]
+position = Vector2(145, 830)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "angelplatz"
+metadata/type = "point"
+metadata/display_name = "Am Steg angeln"
+metadata/description = "Der verbreiterte Steg bietet genügend Platz zum Angeln und für Gespräche mit Hafen-NPCs."
+metadata/radius = 86.0
+
+[node name="Radius" type="CollisionShape2D" parent="InteractionZones/Angelplatz"]
+shape = SubResource("InteractionRadius86")
+disabled = true
+
+[node name="Nordpfad" type="Area2D" parent="Exits" groups=["interactable"]]
+position = Vector2(464, 110)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "nordpfad"
+metadata/type = "exit"
+metadata/display_name = "Nordpfad zum Waldweg"
+metadata/description = "Der nördliche Weg führt aus dem sicheren Dorf in die Waldgebiete Asterras."
+metadata/radius = 55.0
+
+[node name="Radius" type="CollisionShape2D" parent="Exits/Nordpfad"]
+shape = SubResource("InteractionRadius105")
+disabled = true
+
+[node name="Ostweg" type="Area2D" parent="Exits" groups=["interactable"]]
+position = Vector2(1330, 470)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "ostweg"
+metadata/type = "exit"
+metadata/display_name = "Norddorf über den Ostweg verlassen"
+metadata/description = "Der Ostweg ist als späterer Gebietsübergang vorbereitet."
+metadata/radius = 55.0
+
+[node name="Radius" type="CollisionShape2D" parent="Exits/Ostweg"]
+shape = SubResource("InteractionRadius95")
+disabled = true
+
+[node name="Suedweg" type="Area2D" parent="Exits" groups=["interactable"]]
+position = Vector2(815, 1062)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+metadata/id = "suedweg"
+metadata/type = "exit"
+metadata/display_name = "Norddorf über den Südweg verlassen"
+metadata/description = "Der Südweg verbindet Norddorf mit der Küstenstraße und weiteren Regionen."
+metadata/radius = 55.0
+
+[node name="Radius" type="CollisionShape2D" parent="Exits/Suedweg"]
+shape = SubResource("InteractionRadius95")
+disabled = true
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(650, 455)
+editor_description = "Startposition für Ryu."
+
+[node name="Ryu" parent="." instance=ExtResource("5_ryu")]
+position = Vector2(650, 455)
+footsteps_enabled = true
+footstep_volume_db = -9.0
+
+[node name="CameraLimits" type="Node2D" parent="."]
+editor_description = "Editor-Marker für die Grenzen der 1448 × 1086 Pixel großen Karte. Die aktive Camera2D liegt in Ryu.tscn."
+
+[node name="TopLeft" type="Marker2D" parent="CameraLimits"]
+position = Vector2(0, 0)
+
+[node name="TopRight" type="Marker2D" parent="CameraLimits"]
+position = Vector2(1448, 0)
+
+[node name="BottomLeft" type="Marker2D" parent="CameraLimits"]
+position = Vector2(0, 1086)
+
+[node name="BottomRight" type="Marker2D" parent="CameraLimits"]
+position = Vector2(1448, 1086)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 20
+editor_description = "HUD-Wurzel. Die bisherigen Bedienelemente werden beim Start als Kinder angelegt."

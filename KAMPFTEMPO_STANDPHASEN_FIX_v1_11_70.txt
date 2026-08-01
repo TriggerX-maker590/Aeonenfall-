@@ -1,0 +1,7 @@
+Aeonenfall v1.11.70
+
+- Normales Kampftempo startet jetzt mit 1,0x statt 2,0x.
+- Ryu und alle normalen Gegner bleiben in ihren Standphasen vollständig ruhig.
+- Keine fortlaufenden Idle-Framewechsel und dadurch kein Zittern oder Verrutschen.
+- Positionsbewegungen und Aktionsframes werden nur bei Angriffen, Treffern und Tod abgespielt.
+- Der optionale 2x-Schalter bleibt verfügbar.

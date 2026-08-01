@@ -1,0 +1,14 @@
+Aeonenfall v1.11.65 – Import- und Startoptimierung
+
+Grundlage: v1.11.64 (funktionierender Kampfstart-Selector-ParseFix)
+
+Geändert:
+- doppelte Ryu-, Portrait-, UI- und Schattenressourcen entfernt
+- alle aktiven Pfade auf einen gemeinsamen kanonischen Assetbestand umgestellt
+- nicht verwendete Konzept-, Referenz-, Quell- und Vorschaugrafiken entfernt
+- ungenutzte Ryu-R2-Kampfframes entfernt
+- ungenutzte ältere Kampf-UI-Versionen entfernt
+- alle vorhandenen festen res://-Pfade nach der Bereinigung geprüft
+
+Gameplay, Zufallsbegegnungen, Gegnerpools und das aktuelle Kampf-UI wurden nicht verändert.
+Der erste Import in Godot bleibt einmalig erforderlich. Den entpackten Projektordner danach weiterverwenden und nicht bei jedem Start neu entpacken, damit Godots Import-Cache erhalten bleibt.

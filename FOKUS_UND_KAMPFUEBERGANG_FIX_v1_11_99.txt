@@ -1,0 +1,18 @@
+Aeonenfall v1.11.99 – Fokus- und Kampfübergang-Fix
+
+Fokus-Balance:
+- Ryu: 70 statt 50 maximaler Fokus.
+- Lichtschnitt: 14 Fokus.
+- Klingenwirbel: 20 Fokus.
+- Rüstungsbrecher: 12 Fokus.
+- Normaler Angriff regeneriert 5 Fokus.
+- Die Fokusregeneration durch Gegenstände wird ab v1.12.0 aus der zentralen Gegenstandsdefinition gelesen.
+- Spielstände mit 50 Fokus werden ohne Verlust des bisherigen Fehlbetrags auf 70 migriert.
+
+Kampfübergang:
+- Neuer persistenter SceneTransition-Autoload.
+- Erkundung wird vor dem Szenenwechsel vollständig schwarz abgedeckt.
+- Zufalls-Encounter-Selector bleibt bis zur fertig aufgebauten Kampfszene schwarz.
+- Das Kampfbild wird erst nach zwei vollständigen Renderframes eingeblendet.
+- Schwarze Default-Clear-Color als zusätzliche Absicherung gegen graue Leerframes.
+- Rückkehr aus Kämpfen verwendet denselben Übergang.

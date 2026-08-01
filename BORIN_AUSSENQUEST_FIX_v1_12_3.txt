@@ -1,0 +1,7 @@
+Aeonenfall v1.12.3 – Borin Außenquest-Fix
+
+- Grundlage: bestätigte v1.12.2; die verworfene Schmiedeinnenraum-Version wurde nicht verwendet.
+- Borins Schmiede bleibt ein reiner Außenbereich ohne betretbaren Innenraum.
+- Nach der Erzabgabe muss Ryu Norddorf über den Nordpfad verlassen und anschließend zurückkehren.
+- Bei der Rückkehr wird die Aderklinge abholbereit und Borins Außendialog vergibt Waffe, Erfahrung und Silber.
+- Alte Innenraum-/Overlay-Flags werden aus bestehenden Spielständen entfernt.

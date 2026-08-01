@@ -1,0 +1,9 @@
+Aeonenfall v1.11.91 – Kampf-UI lückenlos
+
+Grundlage: bestätigte v1.11.89.
+Die verworfene Abstandsversion v1.11.90 wurde nicht verwendet.
+
+Änderung:
+- Die vier unteren Kampf-UI-Felder schließen horizontal bündig aneinander an.
+- Zwischen Charakter-, Befehls-, Fähigkeiten- und Beschreibungsfeld scheint kein Kampfhintergrund mehr durch.
+- Positionen der Inhalte, Kristallornamente, Initiativeleiste, Porträts, 1×/2×-Schaltung und Kampfmechanik bleiben unverändert.

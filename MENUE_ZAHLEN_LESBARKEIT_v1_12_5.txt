@@ -1,0 +1,8 @@
+Aeonenfall v1.12.5 – Menü-Zahlen-LesbarkeitsFix
+
+- Zahlenwerte im Charakter-/Inventarmenü gezielt stärker vergrößert.
+- LP, Fokus, Ausdauer, EP, Attribute und Kampfwerte mit hoher Kontrastkontur versehen.
+- Gold, Inventarplätze, Gegenstandsmengen und Besitzanzeigen vergrößert.
+- Händlerpreise, Warenkorbwerte und Kartenzoom besser lesbar.
+- Ressourcenbalken leicht verkürzt, damit die größeren Zahlen ausreichend Platz haben.
+- Bestehendes Menü-Layout und sämtliche Spielfunktionen bleiben unverändert.
